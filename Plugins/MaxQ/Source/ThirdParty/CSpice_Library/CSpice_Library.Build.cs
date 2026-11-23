@@ -18,16 +18,7 @@ public class CSpice_Library : ModuleRules
         string cspiceDir = Path.Combine(ModuleDirectory, "cspice/");
         string includeDir = Path.Combine(cspiceDir, "include/");
         string libDir = Path.Combine(ModuleDirectory, "lib", Target.Platform.ToString());
-        if(Target.Platform == UnrealTargetPlatform.Win64)
-        {
 
-        }
-        else if (Target.Platform == UnrealTargetPlatform.Mac)
-        {
-        }
-        else if (Target.Platform == UnrealTargetPlatform.Android)
-        {
-        }
 
         string libName;
         if (Target.Platform == UnrealTargetPlatform.Win64)
@@ -44,7 +35,8 @@ public class CSpice_Library : ModuleRules
         }
         else if (Target.Platform == UnrealTargetPlatform.Android)
         {
-            libName = "libcspice.lib";
+            libName = "libcspice.so";
+            AdditionalPropertiesForReceipt.Add("AndroidPlugin", Path.Combine(ModuleDirectory, "CSpice_Library_APL.xml"));
         }
         /*
         Add conditionals for any other platforms you want to support via recompilation here:
@@ -63,7 +55,8 @@ public class CSpice_Library : ModuleRules
 
         Type = ModuleRules.ModuleType.External;
         PrecompileForTargets = PrecompileTargetsType.Any;
-        PublicPreBuildLibraries.Add(libFile);
+         PublicPreBuildLibraries.Add(libFile);
+        RuntimeDependencies.Add(libFile);
 
         if (!Directory.Exists(includeDir))
         {
