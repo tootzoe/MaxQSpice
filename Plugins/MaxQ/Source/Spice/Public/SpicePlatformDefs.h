@@ -43,8 +43,8 @@
 #define SpiceStringCompare strcmp
 #define SpiceStringLengthN strnlen
 #define SPICE_MAX_PATH 255
-#define PRAGMA_PUSH_PLATFORM_DEFAULT_PACKING
-#define PRAGMA_POP_PLATFORM_DEFAULT_PACKING
+//#define PRAGMA_PUSH_PLATFORM_DEFAULT_PACKING
+//#define PRAGMA_POP_PLATFORM_DEFAULT_PACKING
 #define SpiceStaticPartialTemplate 
 #elif PLATFORM_ANDROID
 #include <string.h>

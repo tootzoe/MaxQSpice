@@ -231,7 +231,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != N)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%d] but proc returned double[%d]"), *bodynm, *item, N, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%lld] but proc returned double[%lld]"), *bodynm, *item, N, n_actual);
         }
     }
 
@@ -259,7 +259,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != n_expected)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%d] but proc returned double[%d]"), *bodynm, *item, n_expected, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%lld] but proc returned double[%lld]"), *bodynm, *item, n_expected, n_actual);
         }
     }
     
@@ -286,7 +286,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != N)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%d] but proc returned double[%d]"), *bodynm, *item, N, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for %s_%s Expected double[%lld] but proc returned double[%lld]"), *bodynm, *item, N, n_actual);
         }
     }
 
@@ -336,7 +336,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != n_expected)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%d] but proc returned double[%d]"), bodyid, *item, n_expected, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%lld] but proc returned double[%lld]"), bodyid, *item, n_expected, n_actual);
         }
     }
 
@@ -362,7 +362,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != N)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%d] but proc returned double[%d]"), bodyid, *item, N, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%lld] but proc returned double[%lld]"), bodyid, *item, N, n_actual);
         }
     }
 
@@ -386,7 +386,7 @@ namespace MaxQ::Data
         if (!ErrorCheck(ResultCode, ErrorMessage) && n_actual != N)
         {
             if (ResultCode) *ResultCode = ES_ResultCode::Error;
-            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%d] but proc returned double[%d]"), bodyid, *item, N, n_actual);
+            if (ErrorMessage) *ErrorMessage = FString::Printf(TEXT("Blueprint request for BODY%d_%s Expected double[%lld] but proc returned double[%lld]"), bodyid, *item, N, n_actual);
         }
     }
 
