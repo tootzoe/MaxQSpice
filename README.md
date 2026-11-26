@@ -13,3 +13,23 @@
 
 
 ##Updated to UE6 for MaxQ from https://github.com/Gamergenic1/MaxQ
+
+
+
+## IOS 
+
+
+
+https://github.com/user-attachments/assets/51807000-c0fa-4600-8cc0-477ad63674f1
+
+
+## Android 
+
+
+
+https://github.com/user-attachments/assets/d8642638-0174-4862-bf2f-5493c29fe34e
+
+
+## Only fixed building issues , game related issues still remain there....
+
+
