@@ -60,15 +60,15 @@ public class CSpice_Library : ModuleRules
                 )
                 );
 
-//               PublicFrameworks.AddRange(  new string[]
-//                   {
-//
-//                       "JavaScriptCore",
-//                       "SystemConfiguration",
-//                       "UIKit" ,
-//                       "AppTrackingTransparency"
-//                   }
-//               );
+               PublicFrameworks.AddRange(  new string[]
+                   {
+
+                      // "JavaScriptCore",
+                     //  "SystemConfiguration",
+                     //  "UIKit" ,
+                       "AppTrackingTransparency"
+                   }
+               );
 
 
 }

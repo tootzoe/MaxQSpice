@@ -17,7 +17,8 @@
   "SupportedTargetPlatforms": [
     "Win64",
     "Mac",
-    "Android"
+    "Android",
+    "IOS"
   ],
   "Modules": [
     {
@@ -26,7 +27,8 @@
       "LoadingPhase": "PreDefault",
       "PlatformAllowList": [
         "Win64",
-        "Mac"
+        "Mac",
+        "IOS"
       ]
     },
     {

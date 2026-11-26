@@ -53,8 +53,8 @@ namespace MaxQ::Private
     #if WITH_EDITOR
         if (path.StartsWith(TEXT("Content")))
         {
-            UE_LOG(LogSpice, Error, TEXT("BREAKING SPICE BEHAVIOR CHANGE!!  Spice data must be in project /Content directory.  All paths are now relative to /Content"));
-            UE_LOG(LogSpice, Error, TEXT("Is relative to Content directory: %s"), *file);
+            UE_LOGF(LogSpice, Error, TEXT("BREAKING SPICE BEHAVIOR CHANGE!!  Spice data must be in project /Content directory.  All paths are now relative to /Content"));
+            UE_LOGF(LogSpice, Error, TEXT("Is relative to Content directory: %ls"), *file);
         }
     #endif
 
