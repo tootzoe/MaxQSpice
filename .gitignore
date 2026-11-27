@@ -18,8 +18,11 @@ Build/
 DerivedDataCache/
 Intermediate/
 Saved/
+tootbd/
 
 
 *.xcworkspace
 *.uproject
 
+TOOT_UE5_build20260924.cmd
+TOOT_UE5mac_build20260928.command
